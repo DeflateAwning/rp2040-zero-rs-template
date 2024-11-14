@@ -16,8 +16,8 @@ jobs:
           target: thumbv6m-none-eabi
       - name: Build project
         run: cargo build ${{ matrix.mode }} ${{ matrix.features }}
-      - name: List built examples and clean
-        run: rm -vrf target/thumbv6m-none-eabi/*/examples/* | sed -e "s/removed '\(.*\)'/\1/" | xargs -l basename | grep -Ev '(-|\.d)'
+      # - name: List built examples and clean
+      #   run: rm -vrf target/thumbv6m-none-eabi/*/* | sed -e "s/removed '\(.*\)'/\1/" | xargs -l basename | grep -Ev '(-|\.d)'
       # - name: Test
       #   run: cargo test --tests --target x86_64-unknown-linux-gnu ${{ matrix.features }}
       # - name: Test docs

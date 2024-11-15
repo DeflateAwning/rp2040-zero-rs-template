@@ -15,6 +15,7 @@ rp2040-hal = "0.10.0"
 cortex-m-rt = "0.7.3"
 embedded-hal = "1.0.0"
 panic-halt= "0.2.0"
+fugit = "0.3.7"
 
 # For RGB LED on RP2040-Zero board.
 ws2812-pio = "0.8.0"
